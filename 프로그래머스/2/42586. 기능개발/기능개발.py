@@ -10,6 +10,7 @@ def solution(progresses, speeds):
     while True:
         if not qProgressess:
             break
+            
         if (qProgressess[0] + days*qSpeeds[0]) >= 100:
             qProgressess.popleft()
             qSpeeds.popleft()
