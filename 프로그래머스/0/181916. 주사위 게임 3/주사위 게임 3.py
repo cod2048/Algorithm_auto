@@ -16,7 +16,7 @@ def solution(a, b, c, d):
     if sorted_dice[0][1] == 4:
         answer += 1111 * sorted_dice[0][0]
     elif sorted_dice[0][1] == 3:
-        answer += ((10 * sorted_dice[0][0]) + sorted_dice[1][0]) * ((10 * sorted_dice[0][0]) + sorted_dice[1][0])
+        answer += ((10 * sorted_dice[0][0]) + sorted_dice[1][0]) ** 2
     elif sorted_dice[0][1] == 2:
         if sorted_dice[1][1] == 2:
             answer += (sorted_dice[0][0] + sorted_dice[1][0]) * abs(sorted_dice[0][0] - sorted_dice[1][0])
