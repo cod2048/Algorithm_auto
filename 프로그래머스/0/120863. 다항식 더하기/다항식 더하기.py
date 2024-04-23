@@ -7,7 +7,7 @@ def solution(polynomial):
     for i in divide:
         if 'x' in i:
             plus = i.split('x')[0]
-            if plus == '' or plus == '1':
+            if plus == '':
                 num_x += 1
             else:
                 num_x += int(plus)
