@@ -1,7 +1,7 @@
 class Solution:
     def mostCommonWord(self, paragraph: str, banned: List[str]) -> str:
         paragraph = paragraph.lower()
-        word_list = [word for word in re.sub(r"[^\\w]", " ", paragraph).split() if word]
+        word_list = [word for word in re.sub(r"[^\w]", " ", paragraph).split() if word]
         word_dict = dict()
 
         for word in word_list:
