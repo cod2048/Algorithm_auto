@@ -33,8 +33,10 @@ def solution(rows, columns, queries):
     
     for i in range(rows):
         tmp = []
+        
         for j in range(columns):
             tmp.append(i * columns + (j + 1))
+            
         graph.append(tmp)
     
     for query in queries:
