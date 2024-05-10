@@ -1,11 +1,11 @@
 def solution(s):
     stack = []
     
-    for x in s:
-        if len(stack) != 0 and stack[-1] == x:
+    for letter in s:
+        if len(stack) != 0 and stack[-1] == letter:
             stack.pop()
         else:
-            stack.append(x)
+            stack.append(letter)
         
     if stack:
         return 0
