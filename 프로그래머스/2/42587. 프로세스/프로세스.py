@@ -9,12 +9,9 @@ def solution(priorities, location):
     for i in range(len(priorities)):
         process_priorities.append((priorities[i], chr(process)))
         process += 1
-        
-    print(process_priorities)
     
     # 찾고자하는 프로세스(알파벳)
     target_process = process_priorities[location][1]
-    print("target_process : ", target_process)
     
     while True:
         current_process = process_priorities.popleft()
@@ -26,7 +23,7 @@ def solution(priorities, location):
                 is_highest_priority = False
                 break
         
-        # 가장 높은 것일 경우 찾는 알파벳이 맞는지 검사
+        # 가장 높은 것일 경우, 찾는 알파벳이 맞는지 검사
         if is_highest_priority:
             answer += 1
             if current_process[1] == target_process:
